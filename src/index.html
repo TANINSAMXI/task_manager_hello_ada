@@ -1,14 +1,31 @@
-<!doctype html>
+<!DOCTYPE html>
 <html lang="en">
-    <head>
-        <meta charset="UTF-8" />
-        <title>Title</title>
-        <link
-            rel="stylesheet"
-            href="./../node_modules/bootstrap/dist/css/bootstrap.min.css"
-        />
-    </head>
-    <body>
-        <script src="../src/js/index.js"></script>
-    </body>
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Task Manager</title>
+    <link rel="stylesheet" href="css/all.css">
+</head>
+<body class="index-page">
+<header>
+    <h1>Task Manager</h1>
+    <a href="login.html" class="logout" onclick="localStorage.removeItem('loggedIn')">Logout</a>
+</header>
+
+<div class="container">
+    <h2>Your Tasks</h2>
+    <ul id="taskList">
+        <!-- Task items will be dynamically added here -->
+    </ul>
+
+    <h3>Add New Task</h3>
+    <form id="taskForm">
+        <input type="text" id="taskTitle" placeholder="Task Title" required>
+        <textarea id="taskDescription" placeholder="Task Description" required></textarea>
+        <button type="submit">Add Task</button>
+    </form>
+</div>
+
+<script src="js/script.js"></script>
+</body>
 </html>

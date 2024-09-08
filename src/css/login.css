@@ -1,0 +1,68 @@
+/* login.css */
+body.login-page {
+    font-family: 'Arial', sans-serif;
+    background: url('https://images.alphacoders.com/301/thumb-1920-301273.jpg') no-repeat center center fixed;
+    background-size: cover;
+    color: #e0e0e0;
+    margin: 0;
+    padding: 0;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    height: 100vh;
+}
+
+.container {
+    width: 90%;
+    max-width: 400px;
+    padding: 2rem;
+    background: rgba(0, 0, 0, 0.7);
+    border-radius: 10px;
+    box-shadow: 0 0 20px rgba(0, 0, 0, 0.6);
+    text-align: center;
+}
+
+h2 {
+    color: #1c6ea4;
+    margin-bottom: 1rem;
+}
+
+form input {
+    width: calc(100% - 1rem);
+    padding: 0.5rem;
+    margin: 0.5rem 0;
+    border: 1px solid #1c6ea4;
+    border-radius: 5px;
+    background: rgba(0, 0, 0, 0.5);
+    color: #e0e0e0;
+    transition: background-color 0.3s;
+}
+
+form input:focus {
+    background-color: rgba(0, 0, 0, 0.6);
+    outline: none;
+}
+
+form button {
+    background-color: #1c6ea4;
+    color: #e0e0e0;
+    padding: 0.7rem 1.5rem;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: background-color 0.3s, transform 0.3s;
+}
+
+form button:hover {
+    background-color: #155a8a;
+    transform: scale(1.05);
+}
+
+p a {
+    color: #1c6ea4;
+    text-decoration: none;
+}
+
+p a:hover {
+    text-decoration: underline;
+}
